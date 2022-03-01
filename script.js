@@ -5,12 +5,12 @@ form.addEventListener('submit', (e) => {
   e.preventDefault(); //To prevent default form submit
   const formData = new FormData(e.target); //Creates new form data object
   let object = {};
-  // Checking if the form is filled, if not displaying the error
   const values = [];
   for (let value of formData.values()) {
     //FormData iteration method to get the form values
     values.push(value);
   }
+  // Checking if the form is filled, if not displaying the error
   if (
     values.includes('') ||
     checkbox.checked === false ||
