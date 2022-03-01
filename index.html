@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Australia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo-img.png" alt=" Visit Australia logo" />
+
+      <form novalidate>
+        <h4>Please enter your details below:</h4>
+        <h5 id="error">Please fill out all the details</h5>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name"
+          required
+        />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <div class="radio">
+          <p>I am a resident of</p>
+          <div>
+            <input
+              type="radio"
+              id="australia"
+              name="country"
+              value="Australia"
+              class="radio"
+            />
+            <label for="australia">Austalia</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="new-zealand"
+              name="country"
+              value="New Zealand"
+              required
+            />
+            <label for="new-zealand">New Zealand</label>
+          </div>
+          <div>
+            <input type="radio" id="outside" name="country" value="Outside" />
+            <label for="outside">Outside of Australia and New Zealand</label>
+          </div>
+        </div>
+        <div class="agree">
+          <input type="checkbox" name="agreement" id="agreement" required />
+          <span
+            ><label for="agreement">
+              confirm I am over 19, accept the terms and conditions, and give
+              consent to recieve relevant email communication</label
+            ></span
+          >
+        </div>
+        <button type="submit">Sumbit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
